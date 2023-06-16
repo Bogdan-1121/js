@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let number = parseFloat(prompt("Введіть число:"));
+      let square = number ** 2;
+      console.log("Квадрат числа:", square);
+    </script>
+
+    <script>
+      let name = prompt("Введіть ваше ім'я:");
+      let depositAmount = parseFloat(prompt("Введіть суму депозиту (грн.):"));
+      let depositDuration = parseInt(
+        prompt("Введіть термін депозиту (місяці):")
+      );
+
+      let interestRate = 0.2; // 20% річних
+      let earnedAmount = depositAmount * interestRate * (depositDuration / 12);
+
+      console.log(
+        `Шановний ${name}, Ви внесли ${depositAmount} грн., під 20% річних, на термін ${depositDuration} місяців.`
+      );
+      console.log(`За цей період часу Ви заробите ${earnedAmount} грн.`);
+    </script>
+
+    <script>
+      let a = parseFloat(prompt("Введіть перше число:"));
+      let b = parseFloat(prompt("Введіть друге число:"));
+
+      let sum = a + b;
+      let difference = a - b;
+      let multiplication = a * b;
+      let division = a / b;
+
+      console.log("Сума:", sum);
+      console.log("Різниця:", difference);
+      console.log("Множення:", multiplication);
+      console.log("Ділення:", division);
+    </script>
+  </body>
+</html>
